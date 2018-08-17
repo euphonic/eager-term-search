@@ -1,0 +1,2 @@
+Phase-1-Search-Term/green-technology/renewable_patent_results.csv filter=lfs diff=lfs merge=lfs -text
+Phase-1-Search-Term/nano-technology/nano_patents.csv filter=lfs diff=lfs merge=lfs -text

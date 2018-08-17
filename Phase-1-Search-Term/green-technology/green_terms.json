@@ -1,0 +1,643 @@
+[
+  {
+    "id": 1,
+    "sector": "General",
+    "subsector": "",
+    "terms": {
+      "clauses": [
+        "sustainab*",
+        "green good*",
+        "green technolog*",
+        "green innov*",
+        "eco*innov*",
+        "green manufac*",
+        "green prod*",
+        "pollut*",
+        "ecolabel",
+        "environ* product declarat*",
+        {"clauses":["EPD","environ*" ], "joinwith":"AND"},        
+        "environ* prefer* product*",
+        "environ* label*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 2,
+    "sector": "Environmental",
+    "subsector": "All-purpose",
+    "terms": {
+      "clauses": [
+        "natur* environ*",
+        "environ* friend*",
+        "environment* conserv*",
+        "biocompat*",
+        "biodivers*",
+        "filter*",
+        "filtra*",
+        "synth* gas*",
+        "regenerat*",
+        "recircul*",
+        "gasification",
+        "gasifier",
+        "fluidized clean gas",
+        "gas cleaning"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 3,
+    "sector": "Environmental",
+    "subsector": "Biological treatment",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "biogas*",
+            "bioreact*",
+            "polyolef*",
+            "biopolymer*",
+            "disinfect*",
+            "biofilm*",
+            "biosens*",
+            "biosolid*",
+            "caprolact*",
+            {
+              "clauses": [
+                {
+                  "clauses": [
+                    "ultraviol*",
+                    "UV"
+                  ],
+                  "joinwith": "OR"
+                },
+                {
+                  "clauses": [
+                    "radiat*",
+                    "sol*"
+                  ],
+                  "joinwith": "OR"
+                }
+              ],
+              "joinwith": "AND"
+            }
+          ],
+          "joinwith": "OR"
+        },
+        {
+          "clauses": [
+            "bioremed*",
+            "biorecov*",
+            "biolog* treat*",
+            "biodegrad*"
+          ],
+          "joinwith": "OR"
+        }
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 4,
+    "sector": "Environmental",
+    "subsector": "Air pollution",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "air* contr*",
+            "dust* contr*",
+            "particular* contr*",
+            "air* qual*"
+          ],
+          "joinwith": "OR"
+        },
+        "pollut*"
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 5,
+    "sector": "Environmental",
+    "subsector": "Environmental monitoring, instrumentation and analysis",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "life cycle analys*",
+            "life*cycle analysis",
+            {
+              "clauses": [
+                "environ*",
+                "instrument*"
+              ],
+              "joinwith": "AND"
+            },
+            {
+              "clauses": [
+                "environ*",
+                "analys*"
+              ],
+              "joinwith": "AND"
+            }
+          ],
+          "joinwith": "OR"
+        },
+        "environ* monitor*"
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 6,
+    "sector": "Environmental",
+    "subsector": "Marine pollution control",
+    "terms": {
+      "clauses": [
+        "marin* control*",
+        "pollut*"
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 7,
+    "sector": "Environmental",
+    "subsector": "Noise & vibration control",
+    "terms": {
+      "clauses": [
+        "nois* abat*",
+        "nois* reduc*",
+        "nois* lessen*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 8,
+    "sector": "Environmental",
+    "subsector": "Contaminated land reclamation & remediation",
+    "terms": {
+      "clauses": [
+        "land",
+        {
+          "clauses": [
+            "reclam*",
+            "remediat*",
+            "contamin*"
+          ],
+          "joinwith": "OR"
+        }
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 9,
+    "sector": "Environmental",
+    "subsector": "Waste management",
+    "terms": {
+      "clauses": [
+        "wast*",
+        "sewag*",
+        "inciner*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 10,
+    "sector": "Environmental",
+    "subsector": "Water supply & waste water treatment",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "slurr*",
+            "sludg*",
+            "aque* solution*",
+            "wastewat*",
+            "effluent*",
+            "sediment*",
+            "floccul*",
+            "detergen*",
+            "coagul*",
+            "dioxin*",
+            "flow* control* dev*",
+            "fluid commun*",
+            "high purit*",
+            "impur*",
+            "zeolit*"
+          ],
+          "joinwith": "OR"
+        },
+        {
+          "clauses": [
+            "water treat*",
+            "water purif*",
+            "water pollut*"
+          ],
+          "joinwith": ""
+        }
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 11,
+    "sector": "Environmental",
+    "subsector": "Recovery and recycling",
+    "terms": {
+      "clauses": [
+        "recycl*",
+        "compost*",
+        "stock process*",
+        "coal combust*",
+        "remanufactur*",
+        {
+          "clauses": [
+            "coal",
+            "PCC"
+          ],
+          "joinwith": "AND"
+        },
+        "circulat* fluid* bed combust*",
+        {
+          "clauses": [
+            "combust*",
+            "CFBC"
+          ],
+          "joinwith": "AND"
+        }
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 12,
+    "sector": "Renewable energy",
+    "subsector": "All-purpose",
+    "terms": {
+      "clauses": [
+        "renewabl*",
+        {
+          "clauses": [
+            "energ*",
+            "electric*"
+          ],
+          "joinwith": "OR"
+        }
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 13,
+    "sector": "Renewable energy",
+    "subsector": "Wave & Tidal",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "two basin schem*",
+            "wave* energ*",
+            "tid* energ*"
+          ],
+          "joinwith": "OR"
+        },
+        "electric*"
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 14,
+    "sector": "Renewable energy",
+    "subsector": "Biomass",
+    "terms": {
+      "clauses": [
+        "biomass*",
+        "enzymat* hydrolys*",
+        "bio*bas* product*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 15,
+    "sector": "Renewable energy",
+    "subsector": "Wind",
+    "terms": {
+      "clauses": [
+        "wind power*",
+        "wind energ*",
+        "wind farm*",
+        {
+          "clauses": [
+            "turbin*",
+            "wind*"
+          ],
+          "joinwith": "AND"
+        }
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 16,
+    "sector": "Renewable energy",
+    "subsector": "Geothermal",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "whole system*",
+            "geotherm*"
+          ],
+          "joinwith": "AND"
+        },
+        "geotherm*",
+        "geoexchang*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 17,
+    "sector": "Renewable energy",
+    "subsector": "Photovoltaic & solar",
+    "terms": {
+      "clauses": [
+        "solar*",
+        {
+          "clauses": [
+            "ener*",
+            "linear fresnel sys*",
+            "electric*",
+            "cell*",
+            "heat*",
+            "cool*",
+            "photovolt*",
+            "PV",
+            "cdte",
+            "cadmium tellurid*",
+            "PVC-U",
+            "photoelectr*",
+            "photoactiv*",
+            "sol*gel* process*",
+            "evacuat* tub*",
+            "flat plate collect*",
+            "roof integr* system*"
+          ],
+          "joinwith": "OR"
+        }
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 18,
+    "sector": "Emerging low carbon",
+    "subsector": "All-purpose",
+    "terms": {
+      "clauses": [
+        "low carbon",
+        "zero carbon",
+        "no carbon",
+        "0 carbon",
+        "low*carbon",
+        "zero*carbon",
+        "no*carbon"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 19,
+    "sector": "Emerging low carbon",
+    "subsector": "Alternative fuel vehicle",
+    "terms": {
+      "clauses": [
+        "electric* vehic*",
+        "hybrid vehic*",
+        "electric* motor*",
+        "hybrid motor*",
+        "hybrid driv*",
+        "electric* car*",
+        "hybrid car*",
+        "electric* machin*",
+        "electric* auto*",
+        "hybrid auto*",
+        "yaw* rat* sens*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 20,
+    "sector": "Emerging low carbon",
+    "subsector": "Alternative fuel",
+    "terms": {
+      "clauses": [
+        "alternat* fuel*",
+        "mainstream* fuel*",
+        "fuel cell*",
+        "nuclear powe*",
+        "nuclear stat*",
+        "nuclear plant*",
+        "nuclear energ*",
+        {
+          "clauses": [
+            "nuclear",
+            "electric*"
+          ],
+          "joinwith": "AND"
+        },
+        "nuclear fuel*",
+        "fuel* process*",
+        "porous* struct*",
+        "porous* substrat*",
+        "solid* oxid* fuel*",
+        "Fischer*Tropsch*",
+        "refus* deriv* fuel*",
+        "refus*deriv* fuel*",
+        {
+          "clauses": [
+            "fuel*",
+            "biotech*",
+            {
+              "clauses": [
+                "ethanol*",
+                "hydrogen*"
+              ],
+              "joinwith": "OR"
+            }
+          ],
+          "joinwith": "AND"
+        },
+        "bio*fuel*",
+        "synthetic fuel",
+        "combined heat and power",
+        "synth* gas*",
+        "syngas"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 21,
+    "sector": "Emerging low carbon",
+    "subsector": "Electrochemical processes",
+    "terms": {
+      "clauses": [
+        "electrochem* cell*",
+        "electrochem* fuel*",
+        "membran* electrod*",
+        "ion* exchang* membran*",
+        "ion*exchang* membran*",
+        "electrolyt* cell*",
+        "catalyt* convers*",
+        "solid* separat*",
+        "membran* separat*",
+        "ion* exchang* resin*",
+        "ion*exchang* resin*",
+        "proton* exchang* membra*",
+        "proton*exchang* membra*",
+        "cataly* reduc*",
+        "electrod* membran*",
+        "therm* engin*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 22,
+    "sector": "Emerging low carbon",
+    "subsector": "Battery",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "batter*",
+            "accumul*"
+          ],
+          "joinwith": "OR"
+        },
+        {
+          "clauses": [
+            "charg*",
+            "rechar*",
+            "turbocharg*",
+            "high capacit*",
+            "rapid charg*",
+            "long life",
+            "ultra*",
+            "solar",
+            "no lead",
+            "no mercury",
+            "no cadmium",
+            "lithium*ion*",
+            "lithium* ion*",
+            "Li*ion"
+          ],
+          "joinwith": "OR"
+        }
+      ],
+      "joinwith": "AND"
+    }
+  },
+  {
+    "id": 23,
+    "sector": "Emerging low carbon",
+    "subsector": "Additional energy sources",
+    "terms": {
+      "clauses": [
+        "addition* energ* sourc*",
+        "addition* sourc* of ener*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 24,
+    "sector": "Emerging low carbon",
+    "subsector": "Carbon capture & storage",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "carbon",
+            "captu*"
+          ],
+          "joinwith": "AND"
+        },
+        {
+          "clauses": [
+            "carbon",
+            "stor*"
+          ],
+          "joinwith": "AND"
+        },
+        "carbon dioxid*",
+        "CO2"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 25,
+    "sector": "Emerging low carbon",
+    "subsector": "Energy management",
+    "terms": {
+      "clauses": [
+        "ener* sav*",
+        "ener* effic*",
+        "energ*effic*",
+        "energ*sav*",
+        "light* emit* diod*",
+        "LED",
+        "organic LED",
+        "OLED",
+        "CFL",
+        "compact fluorescent*",
+        "energ* conserve*"
+      ],
+      "joinwith": "OR"
+    }
+  },
+  {
+    "id": 26,
+    "sector": "Emerging low carbon",
+    "subsector": "Building technologies",
+    "terms": {
+      "clauses": [
+        {
+          "clauses": [
+            "build*",
+            "construct*"
+          ],
+          "joinwith": "OR"
+        },
+        {
+          "clauses": [
+            "insula*",
+            "heat* retent*",
+            "heat* exchang*",
+            "heat* pump*",
+            "therm* exchang*",
+            "therm* decompos*",
+            "therm* energ*",
+            "therm* communic*",
+            "thermoplast*",
+            "thermocoup*",
+            "heat* recover*"
+          ],
+          "joinwith": "OR"
+        }
+      ],
+      "joinwith": "AND"
+    }
+  }
+]

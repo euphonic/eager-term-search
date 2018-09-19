@@ -1,0 +1,12 @@
+[ ]*synthetic[ ]*biology[ ]*
+[ ]*synthetic[ ]*gene[ ]*network[ ]*
+[ ]*standard[ ]*biological[ ]*parts[ ]*
+[ ]*artificial[ ]*genetic[ ]*system[ ]*
+[ ]*synthetic[ ]*genom[^\s]*[ ]*
+[ ]*synthetic[ ]*gene[ ]*circuits[ ]*
+[ ]*minimal[ ]*cells[ ]*
+[ ]*synthetic[ ]*circuits[ ]*
+[ ]*synthetic[ ]*netw[^\s]*[ ]*
+[ ]*synthetic[ ]*cells[ ]*
+[ ]*minimal[ ]*genom[^ ]*[ ]*
+[ ]*artificial[ ]*gene[ ]*netw[^\s]*[ ]*

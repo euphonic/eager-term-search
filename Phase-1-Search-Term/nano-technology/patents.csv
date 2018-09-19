@@ -1,0 +1,17 @@
+uuid,patent_id,text,Biosensor 2 Term,Biosensor Term,Micro Term,Molecular Motor Term,Nano Term,Quantum Term,Quasi Term,Self Term,exclusion,measure_exclusion,selection
+1,1,"This is about electric cars that are super small, like nanometer level small",False,False,False,False,False,False,False,False,False,True,False
+2,2,"This is also about cars that are nanometer small, but this time we use monolayer self assembly",False,False,False,False,False,False,False,True,False,True,True
+3,3,"This is also about cars that are nanometer small, but this time we use copolymer directed assembly",False,False,False,False,False,False,False,True,False,True,True
+4,4,Can we talk a little bit about nano planktons. These are made of methanofullerene,False,False,False,True,True,False,False,False,True,False,False
+5,5,Let's talk about self assembling computers that have nothing to do with small sizes,False,False,False,False,False,False,False,False,False,False,False
+6,6,Glass tumblers made by tunnel microscopy tend to break earlier,False,False,False,False,False,False,False,False,False,False,False
+7,7,It's simple. It's nano quantum wiring,False,False,False,False,True,False,False,False,False,False,True
+8,8,Fill the bucket with ferrofluid,False,False,False,True,False,False,False,False,False,False,True
+9,9,Steel tumblers made by magnetic force microscopy and enforced with quantum superfluid are stronger than glasses made in #6,False,False,True,False,False,False,False,False,False,False,True
+10,10,Build ip phones using array based porous silicon for attaining salvation,False,True,False,False,False,False,False,False,False,False,True
+11,11,The bag is made of multilayer molecular sieve,False,True,False,False,False,False,False,False,False,False,True
+12,12,"Do not touch a baby bats, it will cause molecular imprinting",False,False,False,False,False,False,False,False,False,False,False
+13,13,quasi-crystals are bad ornaments,False,False,False,False,False,False,False,False,False,False,False
+14,14,Quantum doting is popular way for new moms to express their love to newborns,False,False,False,False,False,True,False,False,False,False,True
+15,15,Human body does not carry Nanogomphodon. Neither does a buckyball,False,False,False,True,False,False,False,False,True,False,False
+16,16,"Nanophydinae are cool, literally",False,False,False,False,False,False,False,False,True,False,False

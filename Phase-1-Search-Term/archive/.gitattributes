@@ -1,0 +1,1 @@
+green_patent_results_latest.csv filter=lfs diff=lfs merge=lfs -text

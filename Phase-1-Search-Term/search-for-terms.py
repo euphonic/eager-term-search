@@ -88,7 +88,7 @@ start_time = time.time()
 
 patent_data=pd.read_csv(r"titles_abstracts_20170307.tsv", sep="\t" )
 print("--- %s seconds ---" % (time.time() - start_time))
-with open('./green_terms.json') as data_file:    
+with open('./green-technology/green_terms.json') as data_file:    
     patterns = json.load(data_file)
 
 pattern_with_regexps=[]
@@ -100,4 +100,4 @@ tqdm.pandas(desc="")
 match_results=patent_data.progress_apply(search_current_row,1, args=(patterns,) )
 result_frame = patent_data.join(match_results) 
 # ## Write all fields leaving out title and abstract
-result_frame[result_frame.columns.difference(['title','abstract'])].to_csv("green_patent_results.csv", index=False)
+result_frame[result_frame.columns.difference(['title','abstract'])].to_csv("green-technology/green_patent_results.csv", index=False)

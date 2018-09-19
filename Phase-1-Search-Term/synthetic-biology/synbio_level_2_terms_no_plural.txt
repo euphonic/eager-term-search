@@ -1,0 +1,55 @@
+[ ]*artificial[ ]*gene[ ]*synthesis[ ]*[ ]*
+[ ]*biobrick[ ]*[ ]*
+[ ]*bioengineering[ ]*[ ]*
+[ ]*biological[ ]*engineering[ ]*[ ]*
+[ ]*biological[ ]*machine[ ]*[ ]*
+[ ]*gene[ ]*expression[ ]*[ ]*
+[ ]*gene[ ]*synthesis[ ]*[ ]*
+[ ]*genetic[ ]*engineering[ ]*[ ]*
+[ ]*genetic[ ]*modification[ ]*[ ]*
+[ ]*mechanosynthesis[ ]*[ ]*
+[ ]*metamaterial[ ]*[ ]*
+[ ]*metamaterial[ ]*cloaking[ ]*[ ]*
+[ ]*molecular[ ]*assembler[ ]*[ ]*
+[ ]*molecular[ ]*cloning[ ]*[ ]*
+[ ]*molecular[ ]*engineering[ ]*[ ]*
+[ ]*molecular[ ]*nanotechnology[ ]*[ ]*
+[ ]*mutagenesis[ ]*[ ]*
+[ ]*synthetic[ ]*biological[ ]*circuit[ ]*[ ]*
+[ ]*synthetic[ ]*biology[ ]*[ ]*
+[ ]*synthetic[ ]*dna[ ]*[ ]*
+[ ]*synthetic[ ]*genomics[ ]*[ ]*
+[ ]*synthetic[ ]*morphology[ ]*[ ]*
+[ ]*synthetic[ ]*virology[ ]*[ ]*
+[ ]*xenobiology[ ]*[ ]*
+[ ]*biomimetic[ ]*synthesis[ ]*[ ]*
+[ ]*biomimicry[ ]*[ ]*
+[ ]*bioretrosynthesis[ ]*[ ]*
+[ ]*biosynthesis[ ]*[ ]*
+[ ]*chemosynthesis[ ]*\(nanotechnology\)[ ]*[ ]*
+[ ]*engineering[ ]*biology[ ]*[ ]*
+[ ]*expanded[ ]*genetic[ ]*code[ ]*[ ]*
+[ ]*gene[ ]*therapy[ ]*[ ]*
+[ ]*promoter[ ]*\(genetics\)[ ]*[ ]*
+[ ]*synthetic[ ]*gene[ ]*database[ ]*[ ]*
+[ ]*synthetic[ ]*transcription[ ]*factors[ ]*[ ]*
+[ ]*systems[ ]*and[ ]*synthetic[ ]*biology[ ]*[ ]*
+[ ]*tissue[ ]*engineering[ ]*[ ]*
+[ ]*total[ ]*synthesis[ ]*[ ]*
+[ ]*whole[ ]*genome[ ]*sequencing[ ]*[ ]*
+[ ]*molecular[ ]*logic[ ]*gage[ ]*
+[ ]*molecular[ ]*machine[ ]*
+[ ]*molecular[ ]*motor[ ]*
+[ ]*molecular[ ]*propeller[ ]*
+[ ]*molecular[ ]*sensor[ ]*
+[ ]*molecular[ ]*shuttle[ ]*
+[ ]*molecular[ ]*switch[ ]*
+[ ]*molecular[ ]*tweezers[ ]*
+[ ]*nano[ ]*machine[ ]*
+[ ]*retrosynthetic[ ]*
+[ ]*synbio[ ]*
+[ ]*wetware[ ]*
+[ ]*biobricks[ ]*foundation[ ]*
+[ ]*cloning[ ]*vectors[ ]*
+[ ]*dna[ ]*replication[ ]*
+[ ]*whole-genome[ ]*shotgun[ ]*

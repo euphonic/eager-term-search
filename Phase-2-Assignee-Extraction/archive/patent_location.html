@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+	</head>
+	<body>
+		<div id='map' style='width: 1024px; height: 768px;'></div>
+		<script>
+		mapboxgl.accessToken = 'pk.eyJ1Ijoic2Fydm90aGFtYW4iLCJhIjoiY2o2aTdkNzEyMGgyNjMzcDBjejlsajhpdSJ9.rtWT-0bKc2Dn5KjZSt2wLw';
+		var map = new mapboxgl.Map({
+		container: 'map',
+		style: 'mapbox://styles/mapbox/light-v9'
+		});
+		</script>
+	</body>
+</html>

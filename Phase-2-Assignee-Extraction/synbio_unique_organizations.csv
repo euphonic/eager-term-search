@@ -1,0 +1,574 @@
+,0
+0,University of Miami
+1,The University of Chicago
+2,Arizona Board of Regents on Behalf of the University of Arizona
+3,Regents of the University of Minnesota
+4,The Trustees of Columbia University in the City of New York
+5,New York University
+6,Rohm and Haas Company
+7,"KAI Pharmaceuticals, Inc."
+8,BAXALTA INCORPORATED
+9,AbbVie Inc.
+10,"Galectin Therapeutics, Inc."
+11,E. I. du Pont de Nemours and Company
+12,University of British Columbia
+13,Washington State University
+14,The Regents of the University of California
+15,Roche Molecular Systems
+16,Arkema Inc.
+17,"Agrigenetics, Inc."
+18,"Regeneron Pharmaceuticals, Inc."
+19,THE TRUSTEES OF DARTMOUTH COLLEGE
+20,Incept LLC
+21,"Peytant Solutions, Inc."
+22,Cadtrak Corporation
+23,"Janssen Biotech, Inc."
+24,"Auterra, Inc."
+25,Wisconsin Alumni Research Foundation
+26,Fred Hutchinson Cancer Research Center
+27,University of Kentucky Research Foundation
+28,Sigma-Aldrich Co. LLC
+29,"Sangamo BioSciences, Inc."
+30,"Sophoro Biotechnologies, LLC"
+31,"DNA Twopointo, Inc."
+32,E. Tech Incorporation
+33,"UT-Battelle, LLC"
+34,"Easel Biotechnologies, LLC"
+35,"Alliance for Sustainable Energy, LLC"
+36,Butamax(TM) Advanced Biofuels LLC
+37,"The Henry M. Jackson Foundation for the Advancement of Military Medicine, Inc."
+38,"Cadence Design Systems, Inc."
+39,Palo Alto Research Center Incorporated
+40,Johns Hopkins Univ. 
+41,FUJIFILM Corporation
+42,The Trustees of the University of Pennsylvania
+43,Georgia Tech Research Corporation
+44,"University of Central Florida Research Foundation, Inc."
+45,Trustees of Tufts College
+46,"Arisaph Pharmaceuticals, Inc."
+47,Takeda Pharmaceutical Company Limited
+48,"Gilead Connecticut, Inc."
+49,INDIANA UNIVERSITY RESEARCH & TECHNOLOGY CORPORATION
+50,"Tokyo Ohka Kogyo Co., Ltd."
+51,Council of Scientific and Industrial Research
+52,"Ansun Biopharma, Inc."
+53,Monsanto Technology LLC
+54,AgroFresh Inc.
+55,GEN-PROBE INCORPORATED
+56,"Intuitive Surgical Operations, Inc."
+57,NORTHWESTERN UNIVERSITY
+58,"MCI, Inc."
+59,The Government of the United States as represented by the Secretary of the Department of Health and Human Services
+60,COOK MEDICAL TECHNOLOGIES LLC
+61,Abbott Cardiovascular Systems Inc.
+62,Celanese International Corporation
+63,National Research Council of Canada
+64,"Yeda Research and Development Co., Ltd."
+65,Massachusetts Institute of Technology
+66,"Handylab, Inc."
+67,Korea Research Institute of Bioscience and Biotechnology
+68,Qiagen GmbH
+69,International Business Machines Corporation
+70,"Amazon Technologies, Inc."
+71,Marine Biotech Inc.
+72,Celanese Corporation
+73,DISCOVERYBIOMED INC.
+74,University of Pittsburghof the Commonwealth System of Higher Education
+75,Two Blades Foundation
+76,EMC Corporation
+77,Korea Institute of Science and Technology
+78,Dow AgroSciences LLC
+79,The Board of Trustees of the Leland Stanford Junior University
+80,Deutsches Krebsforschungszentrum Stiftung Des Offenlichen Rechts
+81,Bridgestone Corporation
+82,Dow Global Technologies Inc.
+83,Archer Daniels Midland Company
+84,"Alnylam Pharmaceuticals, Inc."
+85,Bayer Cropscience AG
+86,University of Utah Research Foundation
+87,"Rutgers, The State University of New Jersey"
+88,Life Technologies Corporation
+89,"Virginia Tech Intellectual Properties, Inc."
+90,Visa International Business Machines Corporation
+91,CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE
+92,"Sima Therapeutics, Inc."
+93,Pfizer Inc.
+94,Amgen Fremont Inc.
+95,"Interez, Inc."
+96,"APPLIED STEMCELL, INC."
+97,"Intrexon CEU, Inc."
+98,"System Biosciences, LLC"
+99,Toyota Jidosha Kabushiki Kaisha
+100,"SeQual Technologies, Inc."
+101,"Bisco, Inc."
+102,The University of North Carolina at Chapel Hill
+103,"Novon, Inc."
+104,"ACell, Inc."
+105,University of Manitoba
+106,Novozymes A/S
+107,Syngenta Participations AG
+108,"The Samuel Roberts Noble Foundation, Inc."
+109,"PELLION TECHNOLOGIES, INC."
+110,Assistance Pulique-Hôpitaux de Paris
+111,Institut National de la Sante et de la Recherche Medicale (Inserm)
+112,Boehringer Ingelheim International GmbH
+113,"Joule Unlimited Technologies, Inc."
+114,"S. C. Johnson & Son, Inc. "
+115,Syracuse University
+116,Pioneer Hi Bred International Inc
+117,Commonwealth Scientific & Industrial Research Organization
+118,Instron Corporation 
+119,"VMware, Inc."
+120,GLOBALFOUNDRIES Inc.
+121,The University of Connecticut
+122,"Previvo Genetics, LLC"
+123,The United States of America as represented by the Secretary of Agriculture
+124,UAB Research Foundation
+125,"Texas Research International, Inc."
+126,"GlaxoSmithKline Biologicals, S.A."
+127,"Genentech, Inc."
+128,RINAT NEUROSCIENCE CORP.
+129,"Sarepta Therapeutics, Inc."
+130,Carnegie Mellon University
+131,"The Charles Stark Draper Laboratory, Inc."
+132,"New England Biolabs, Inc."
+133,BP Corporation North America Inc.
+134,"University of Georgia Research Foundation, Inc."
+135,Abbott Point of Care Inc.
+136,"Agency for Science, Technology and Research"
+137,"Board of Regents, University of Texas System"
+138,"Red Hat, Inc."
+139,The United States of America as represented by the Secretary of the Navy
+140,"St. Jude Medical, Inc."
+141,Tohoku University
+142,University of Southern California
+143,"University of Louisville Research Foundation, Inc."
+144,Mayo Foundation for Medical Education and Research
+145,SABIC GLOBAL TECHNOLOGIES B.V.
+146,"Sumitomo Electric Industries, Ltd."
+147,"Confluence Energy, LLC"
+148,University of Washington 
+149,Nvidia Corporation
+150,"Gilead Sciences, Inc."
+151,University of Massachusetts
+152,"PluroGen Therapeutics, Inc."
+153,Dow Technology Investments LLC
+154,Cornell University
+155,"University of Maryland, Baltimore County"
+156,"Parion Sciences, Inc."
+157,Sungkyunkwan University Foundation for Corporate Collaboration
+158,Children's Hospital and Research Center at Oakland
+159,"Gilead Biologics, Inc."
+160,"UNIVERSITY OF MARYLAND, COLLEGE PARK"
+161,President and Fellows of Harvard College
+162,Research Development Foundation
+163,"CP Kelco U.S., Inc."
+164,"Caribou Biosciences, Inc."
+165,Seiko Instruments Inc.
+166,Brigham and Women's Hospital
+167,The Children's Medical Center Corp.
+168,The General Hospital Corporation
+169,Nordson Corporation
+170,University of Wyoming
+171,Washington State University Research Foundation
+172,The Ohio State University
+173,"Cardiac Pacemakers, Inc."
+174,BASF Corporation 
+175,"Synthetic Genomics, Inc."
+176,Duke University
+177,BASF Plant Science GmbH
+178,"Plant Sensory Systems, LLC"
+179,"TheGreenCell, Inc."
+180,Baylor College of Medicine
+181,Washington University
+182,"Da Yu Enterprises, L.L.C."
+183,Stanford University
+184,Cook Biotech Incorporated
+185,Medicis Pharmaceutical Corporation
+186,"Pharmatrophix, Inc."
+187,3M Innovative Properties Company
+188,Rohm and Haas Electronic Materials LLC
+189,Danisco US Inc.
+190,UNIVERITY OF MASSACHUSETTS
+191,Sandia Corporation
+192,STC.UNM
+193,"VALTED, LLC"
+194,Atrium Medical Corporation
+195,"Hitachi, Ltd."
+196,"Paratek Pharmaceuticals, Inc."
+197,"Amicus Therapeutics, Inc."
+198,Sun Chemical Corporation
+199,"Autonomic Materials, Inc."
+200,The Board of Supervisors of Louisiana State University and Agricultural and Mechanical College
+201,"The Regents of the University of Colorado, a body corporate"
+202,"kSep Systems, LLC"
+203,"Ibis Biosciences, Inc."
+204,"Pioneer Hi-Bred International, Inc."
+205,Genzyme Corporation
+206,Clemson University
+207,Mississippi State University Research and Technology Corporation
+208,Bayer Materialscience LLC
+209,John Hopkins University
+210,Novozymes Inc.
+211,"Bio-Rad Laboratories, Inc."
+212,"Johnson & Johnson Consumer Companies, Inc."
+213,"GangaGen, Inc."
+214,Greatbatch Ltd.
+215,"Cyberonics, Inc."
+216,PolyOne Corporation
+217,"STANDARD ALCOHOL COMPANY OF AMERICA, INC."
+218,Leigh University
+219,Sichuan University
+220,BASF Enzymes LLC
+221,"Adynxx, Inc."
+222,"Lawrence Livermore National Security, LLC"
+223,Peking University
+224,"Battelle Energy Alliance, LLC"
+225,"Dentsply International, Inc."
+226,The Goodyear Tire & Rubber Company
+227,BASF SE
+228,"S.C. Johnson & Son, Inc."
+229,"CMC ICOS BIOLOGICS, INC."
+230,Mitsubishi Metal Corporation
+231,Yale University
+232,Phillips 66 Company
+233,"Arcturus Therapeutics, Inc."
+234,"Biosphere Medical, Inc."
+235,Empire Technology Development LLC
+236,"Tersus Environmental, LLC"
+237,Beryllium Discovery Corp.
+238,The Board of Trustees of Southern Illinois University
+239,UCB Pharma S.A.
+240,Danmarks Tekniske Universitet
+241,"CELLTRION, INC."
+242,ExxonMobil Research and Engineering Company
+243,"Her Majesty the Queen in right of Canada, as represented by the Minister of Agriculture"
+244,Illinois Institute of Technology
+245,BASF
+246,"Transposagen Biopharmaceuticals, Inc."
+247,"Liquidia Technologies, Inc."
+248,"Nant Holdings IP, LLC"
+249,Coloplast A/S
+250,Dow Corning Corporation
+251,Dymax Corporation
+252,Kaneka Corporation
+253,"Yissum, Research Development Company of the Hebrew University of Jerusalem"
+254,Algenol Biotech LLC
+255,BRIGHAM YOUNG UNIVERSITY
+256,National Cheng Kung University
+257,"Globus Medical, Inc."
+258,"ESCAPE THERAPEUTICS, INC."
+259,"Genomatica, Inc."
+260,University of Notre Dame Du Lac
+261,Virginia Commonwealth University
+262,"Sumitomo Rubber Industries, Ltd. "
+263,Shell Oil Company
+264,Wayne State University
+265,Icahn School of Medicine at Mount Sinai
+266,Beth Israel Medical Center
+267,"Koch Biological Solutions, LLC"
+268,Grain Processing Corporation
+269,The Penn State Research Foundation
+270,"OTSUKA PHARMACEUTICAL CO., LTD."
+271,The Gates Corporation
+272,"Avantor Performance Materials, Inc."
+273,NATIONAL TSING HUA UNIVERSITY
+274,Institut Pasteur
+275,AZ Electronic Materials (Luxembourg) S.A.R.L.
+276,Industrial Technology Research Institute
+277,Eastman Kodak Company
+278,Brown University
+279,Intel Corporation
+280,"Aseptia, Inc."
+281,North Carolina State University
+282,"Ethicon Endo-Surgery, Inc."
+283,Pharmion Corporation
+284,Sanofi
+285,The State of Oregon Acting by and through the State Board of Higher Education on Behalf of Oregon State University
+286,Takara Bio Inc.
+287,"Courtagen Life Sciences, Inc."
+288,Henkel AG & Co. KGaA
+289,NATIONAL INSTITUTE FOR MATERIALS SCIENCE
+290,SAP SE
+291,"Samsung Electronics Co., Ltd."
+292,The Regents of the University of Michigan
+293,"AROG PHARMACEUTICALS, INC."
+294,"Hewlett-Packard Development Company, L.P."
+295,"University of Florida Research Foundation, Inc."
+296,Adaptive Biotechnologies Corp.
+297,City of Hope
+298,BROADCOM CORPORATION
+299,Nikon Corporation
+300,"Angiotech Pharmaceuticals (US), Inc."
+301,"GM Global Technology Operations, Inc."
+302,Saint-Gobain Performance Plastics Corporation
+303,"Astex Pharmaceuticals, Inc."
+304,"NanoOncology, Inc."
+305,"Faurecia Interior Systems, Inc."
+306,"Cura Vac, Inc."
+307,The J. David Gladstone Institutes
+308,"Synthezyme, LLC"
+309,Drexel University
+310,Sutter Bay Hospitals
+311,"CPT IP Holdings, LLC"
+312,Los Angeles Biomedical Research Institute at Harbor-UCLA Medical Center
+313,"OrbusNeich Medical, Inc."
+314,Eastman Chemical Company
+315,"Prosoft International, Inc."
+316,"Shin-Etsu Chemical Co., Ltd."
+317,Stellenbosch University
+318,"Integrated DNA Technologies, Inc."
+319,The Board of Trustees of the University of Arkansas
+320,"Longhorn Vaccines and Diagnostics, LLC"
+321,PolyPlus Battery Company
+322,"THE BOARD INSTITUTE, INC."
+323,Massachusetts Eye and Ear Infirmary 
+324,"Dana-Farber Cancer Institute, Inc."
+325,Pegatron Corporation
+326,The Curators of the University of Missouri
+327,"Calysta, Inc."
+328,Novartis AG
+329,WHATSAPP INC.
+330,"Ajinomoto Althea, Inc."
+331,"Tufts Medical Center, Inc."
+332,Forsyth Dental Infirmary for Children
+333,"NeuMoDx Molecular, Inc."
+334,"GE Healthcare Dharmacon, Inc."
+335,Grandis Inc.
+336,The University of Akron
+337,"CellPrint IP Holding, LLC"
+338,Hyundai Motor Company
+339,Hadasit Medical Research Services & Development Company Ltd.
+340,U.S. Army Medical Research and Material Command
+341,Pacific Industrial Development Corporation
+342,Biocon Limited
+343,Korea Advanced Institute of Science and Technology
+344,"Agrivida, Inc."
+345,The Trustees of Boston University
+346,Genesco Inc.
+347,Amgen Inc.
+348,DiscoveRx Corporation
+349,Bausch & Lomb Incorporated
+350,The Research Foundation for the State University of New York
+351,"ProNAi Therapeutics, Inc."
+352,Purdue Research Foundation
+353,St. Jude Children's Research Hospital
+354,"SonoGene, L.L.C."
+355,"Epizyme, Inc."
+356,"Lyotropic Therapeutics, Inc."
+357,KOREA UNIVERSITY RESEARCH AND BUSINESS FOUNDATION
+358,"PNM, Inc."
+359,The Rockefeller University
+360,"aTyr Pharma, Inc."
+361,The Corporation of Mercer University
+362,The Board of Trustees for the Leland Stanford Junior University
+363,"The Government of the United States of America as represented by The Secretary of The Department of Health and Human Services, The National Institutes of Health"
+364,"Bostik, Inc."
+365,University of Kansas
+366,"NuOrtho Surgical, Inc."
+367,The Children's Hospital of Philadelphia
+368,"Gardner-Gibson, Inc."
+369,China University of Petroleum-Beijing
+370,"Cargill, Incorporated"
+371,"Arrowhead Center, Inc."
+372,Thermo Fisher Scientific Inc.
+373,"Amprius, Inc."
+374,University of South Florida
+375,"Ceramatec, Inc."
+376,The Jackson Laboratory
+377,"Warsaw Orthopedic, Inc."
+378,"Boston Scientific Scimed, Inc."
+379,Chevron Phillips Chemical Company LP
+380,"UWM Research Foundation, Inc."
+381,Women and Infants' Hospital Rhode Island
+382,Seiko Epson Corporation
+383,University of Hull
+384,VINDICO NANOBIO TECHNOLOGY INC.
+385,Roche Diagnostics GmbH
+386,Institute of Advanced Study
+387,"22nd Century Limited, LLC"
+388,"AxioMx, Inc."
+389,"Katholieke Universiteit Leuven, KU Leuven R&D"
+390,Symantec Corporation
+391,"NetApp, Inc."
+392,Adobe Systems Incorporated
+393,Tau Therapeutics LLC
+394,OHIO STATE INNOVATION FOUNDATION
+395,"Ojai Retinal Technology, LLC"
+396,"Scientific Design Company, Inc."
+397,Roche Innovation Center Copenhagen A/S
+398,Dana Corporation
+399,"DNA2.0, INC."
+400,"CA, Inc."
+401,"Cornell Research Foundation, Inc."
+402,Chevron Oronitz Company LLC
+403,The Procter & Gamble Company
+404,"PLYCEM USA, INC."
+405,Baker Hughes Incorporated
+406,"Cardiva Medical, Inc."
+407,"The Government of the United States of America as represented by the Secretary of Health and Human Services, Centers for Disease Control and Prevention"
+408,Incyte Holdings Corporation
+409,Em-Tech LLC
+410,Colorado School of Mines
+411,"Genisphere, LLC"
+412,Kabushikikaisha Toshiba
+413,"Truckee Applied Genomics, LLC"
+414,"Dogwood Pharmaceuticals, Inc."
+415,"Poly-Med, Inc."
+416,The United States of America as Represented by the Administrator of the National Aeronautics and Space Administration
+417,Oregon State University
+418,California Institute of Technology
+419,"bioTheranostics, Inc."
+420,The Board of Trustees of the University of Illinois
+421,The Hong Kong University of Science and Technology
+422,Imperial Innovations Limited
+423,"Sierra Sciences, LLC"
+424,UNIVERSITY OF NORTH TEXAS
+425,GLYCON LLC
+426,"Performance Plants, Inc."
+427,The George Washington University
+428,ZIH Corp.
+429,Loma Linda University
+430,"Matrix Odyssey, LLC"
+431,Th United States of America as represented by the Secretary of the Army
+432,"Leap Frogg, LLC"
+433,The University of Maryland
+434,Trustees of Princeton University
+435,The Cleveland Clinic Foundation
+436,"MIETAMARK GENETICS, INC."
+437,Cleanvantage LLC
+438,University of Calcutta
+439,"ASTUTE MEDICAL, INC."
+440,"ServiceNow, Inc."
+441,"Diamicron, Inc."
+442,"Neumedicines, Inc."
+443,"Theraclone Sciences, Inc."
+444,The Scripps Research Institute
+445,International AIDS Vaccine Initiative
+446,"Kamtec, LLC"
+447,U.S. Smokeless Tobacco Company LLC
+448,"Applied Biosystems, LLC"
+449,Dell Software Inc.
+450,"Freescale Semiconductor, Inc."
+451,Child Laboratories Inc.
+452,"Therapeutic Proteins International, LLC"
+453,"Florida State University Research Foundation, Inc"
+454,"Ecovative Design, LLC"
+455,"Nationwide Children's Hospital, Inc."
+456,Litron Laboratories Limited
+457,Central Iowa Health System
+458,"Colorado Seminary, which owns and operates the University of Denver"
+459,"Transitions Optical, Inc."
+460,"Codexis, Inc."
+461,United Technologies Corporation
+462,"PTC Therapeutics, Inc."
+463,Merck Patent GmbH
+464,The Ohio State University Research Foundation
+465,"Verliant Energy, Inc."
+466,Duquesne University of the Holy Ghost
+467,SanDisk Technologies LLC
+468,Oregon Health & Science University
+469,McMaster University
+470,GE Healthcare Limited
+471,Quest Diagnostics Investments Incorporated
+472,Global Eagle Entertainment Inc.
+473,"Taiwan Semiconductor Manufacturing Company, Ltd."
+474,TIME WARNER CABLE ENTERPRISES LLC
+475,"Reynolds Technologies, Inc."
+476,NEWFIELD THERAPEUTICS CORPORATION
+477,"IBC Pharmaceuticals, Inc."
+478,Avtaec Limited
+479,Johnson Matthey PLC
+480,Universite d'Aix-Marseille II
+481,"Elcriton, Inc."
+482,FEI Company
+483,"Veracyte, Inc."
+484,"DePuy Synthes Products, LLC"
+485,Sony Interactive Entertainment America LLC
+486,Sony Corporation
+487,Vascular BioSciences
+488,"Fezza Family Properties, LLC"
+489,"Mumetel, LLC"
+490,RenovaCare Sciences Corp.
+491,Whitehead Institute for Biomedical Research 
+492,"Morpho, Inc."
+493,"Sirnaomics, Inc."
+494,Thomas Jefferson University
+495,"Medical Diagnostic Laboratories, LLC"
+496,Proterra Inc.
+497,G.D.O. Inc
+498,Kansas State University Research Foundation
+499,"Kiverdi, Inc."
+500,"SRG Global, Inc."
+501,Nalco Company
+502,GLIKNIK INC.
+503,Lovelace Respiratory Research Institute
+504,KUBIX INC.
+505,University of Washington through its Center for Commercialization
+506,Access Business Group International LLC
+507,Baxter International Inc.
+508,Baxter Healthcare SA
+509,Xerox Corporation
+510,"Isis Pharmaceuticals, Inc."
+511,"TerraVia Holdings, Inc."
+512,"Ampio Pharmaceuticals, Inc."
+513,"Matrix Genetics, LLC"
+514,"Iowa State University Research Foundation, Inc. "
+515,"Becton, Dickinson and Company"
+516,National Institutes of Health
+517,"Annam Biosciences, LLC"
+518,Thoratec Corporation
+519,"Illinois Tool Works, Inc."
+520,"Materia, Inc."
+521,Medical Research Council 
+522,Koninklijke Philips N.V.
+523,MERCK SHARP & DOHME CORP.
+524,Robert Bosch GmbH
+525,"Ventana Medical Systems, Inc."
+526,Sunnybrook Health Sciences Centre
+527,University of MiamiDiabetes Research Institute
+528,"Vindico NanoBioTechnology, LLC"
+529,Applied Genetic Technologies Corporation
+530,STMicroelectronics S.A.
+531,"Sharp Laboratories of America, Inc."
+532,The University of Pittsburgh
+533,Omron Corporation
+534,Bristol-Myers Squibb Company
+535,Momentive Performance Materials Inc.
+536,Kao Corporation
+537,Electronics and Telecommunications Research Institute
+538,Chevron U.S.A. Inc.
+539,"T.H.E.M., Inc."
+540,Denso Corporation
+541,"RES USA, LLC"
+542,TEKNOR APEX COMPANY
+543,INFINEUM INTERNATIONAL LIMITED
+544,"iBio, Inc."
+545,"Genomic Health, Inc."
+546,Infineon Technologies AG
+547,"Immunopath Profile, Inc."
+548,"Authenex, Inc."
+549,University of Puerto Rico
+550,"Pioneer Hi-Bred, Inc."
+551,"Twitter, Inc."
+552,"Production Resource Group, L.L.C."
+553,"Northwest Biotherapeutics, Inc."
+554,Zoetis Services LLC
+555,B.G. Negev Technologies and Applications Ltd.
+556,Medgenics Medical Israel Ltd.
+557,"Nanoquantum Sciences, Inc."
+558,"AVI BioPharma, Inc."
+559,"Lion Copolymer Geismar, LLC"
+560,Uniseal Solutions Inc.
+561,"Vaxiion Therapeutics, Inc."
+562,"Biotechnology Foundation, Inc."
+563,"Alexion Pharmaceuticals, Inc."
+564,"Ablexis, LLC"
+565,"Advanced Cell Technology, Inc."
+566,Philip Morris USA Inc.
+567,INVISTA North America S.a.r.l.
+568,"IDEA TREE, LLC"
+569,"Revivicor, Inc."
+570,Auburn University
+571,Siemens Aktiengesellschaft 
+572,Santoku Corporation

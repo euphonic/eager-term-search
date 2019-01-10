@@ -17,3 +17,6 @@ pandas == 0.20.2
 # Phase-1-Search-Term\search-for-terms.py: 6
 tqdm == 4.15.0
 xlrd
+dask
+toolz
+cloudpickle

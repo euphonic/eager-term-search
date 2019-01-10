@@ -5,6 +5,10 @@ import re
 import pandas as pd
 import time
 from tqdm import tqdm
+import dask.dataframe as dd
+from dask.multiprocessing import get
+
+
 ## helper function to print progress of apply (works well in linux / powershell in windows)
 
 def logged_apply(g, func, *args, **kwargs):
@@ -20,6 +24,7 @@ def logged_apply(g, func, *args, **kwargs):
             sys.stdout.flush()
             wrapper.count += 1
             return func(*args, **kwargs)
+
         wrapper.count = 0
         return wrapper
 
@@ -29,46 +34,48 @@ def logged_apply(g, func, *args, **kwargs):
     sys.stdout.flush()
     return res
 
+
 ###### Compile the regular expression first
 
 def build_re(terms, regexps):
-    regexps["joinwith"]=terms["joinwith"]
-    regexps["clauses"]=[]
+    regexps["joinwith"] = terms["joinwith"]
+    regexps["clauses"] = []
     for clause in terms["clauses"]:
-        found_flag=False
+        found_flag = False
         if isinstance(clause, dict):
-            current_reg=build_re(clause,{})
+            current_reg = build_re(clause, {})
         else:
-            current_expression=clause.replace("*",".*")
-            current_expression=r".*[ ]*"+current_expression+"[ ]*.*"
-            current_reg= re.compile(current_expression, re.IGNORECASE) 
+            current_expression = clause.replace("*", ".*")
+            current_expression = r".*[ ]*" + current_expression + "[ ]*.*"
+            current_reg = re.compile(current_expression, re.IGNORECASE)
         regexps["clauses"].append(current_reg)
     return regexps
+
 
 ######################
 
 ## Below recursive function will look return TRUE / FALSE based on regular expression matching of search term json
-def search_pattern(string,terms):
+def search_pattern(string, terms):
     for clause in terms["clauses"]:
-        found_flag=False
+        found_flag = False
         # If current element is a dictionary, indicates there is a nested condition
         if isinstance(clause, dict):
-            found_flag=search_pattern(string,clause)
+            found_flag = search_pattern(string, clause)
         # If not simple pattern checking
         else:
             try:
                 if clause.match(string) is not None:
-                    found_flag=True
+                    found_flag = True
                 else:
-                    found_flag=False
+                    found_flag = False
             except:
                 print(clause)
                 print(string)
         # For OR condition, its sufficient that only one pattern has to match
-        if terms["joinwith"] == "OR" and found_flag ==True:
+        if terms["joinwith"] == "OR" and found_flag == True:
             break
         # For AND condition, even one match failure leads to not matching the set of clauses
-        if terms["joinwith"] == "AND" and found_flag ==False:
+        if terms["joinwith"] == "AND" and found_flag == False:
             break
     return found_flag
 
@@ -76,29 +83,37 @@ def search_pattern(string,terms):
 # Given a dataframe row and set of patterns returns a series of boolean values indicating if the patterns were found
 ## Called on dataframe using apply function
 def search_current_row(row, patterns):
-    match_results={}
+    match_results = {}
     for pattern in pattern_with_regexps:
-        key=pattern["sector"] + "-"+pattern["subsector"]
-        match_results[key ]=search_pattern(row.title+row.abstract, pattern["terms"])
+        key = pattern["sector"] + "-" + pattern["subsector"]
+        match_results[key] = search_pattern(row.text, pattern["terms"])
     return pd.Series(match_results)
+
 
 # Reading only part of the file now, once we are sure to proceed we can run this on complete file
 # use "r" to treat strings as such i.e ignore backslash
 
 start_time = time.time()
 
-patent_data=pd.read_csv(r"titles_abstracts_20170307.tsv", sep="\t" )
+patent_data = pd.read_csv(r"titles_abstracts_20170307.tsv", sep="\t")
 print("--- %s seconds ---" % (time.time() - start_time))
-with open('./green-technology/green_terms.json') as data_file:    
+with open('./green-technology/green_terms.json') as data_file:
     patterns = json.load(data_file)
 
-pattern_with_regexps=[]
+pattern_with_regexps = []
 for pattern in patterns:
-    pattern_with_regexps.append({"id":pattern["id"],"sector":pattern["sector"],"subsector":pattern["subsector"],"terms":build_re(pattern["terms"],{})})
+    pattern_with_regexps.append({"id": pattern["id"], "sector": pattern["sector"], "subsector": pattern["subsector"],
+                                 "terms": build_re(pattern["terms"], {})})
 pprint.pprint(pattern_with_regexps)
 ## "Loop" through each row and look for patterns
 tqdm.pandas(desc="")
-match_results=patent_data.progress_apply(search_current_row,1, args=(patterns,) )
-result_frame = patent_data.join(match_results) 
+patent_data = patent_data.assign(
+    text=patent_data[["title", "abstract"]].apply(lambda x: ' '.join(x.dropna().values.tolist()), axis=1))
+d_patent_data = dd.from_pandas(patent_data, npartitions=30)
+match_results = d_patent_data.map_partitions(
+    lambda df: df.progress_apply((lambda row: search_current_row(row, patterns)), axis=1)).compute(scheduler=get)
+# match_results = patent_data.progress_apply(search_current_row, 1, args=(patterns,))
+result_frame = patent_data.join(match_results)
 # ## Write all fields leaving out title and abstract
-result_frame[result_frame.columns.difference(['title','abstract'])].to_csv("green-technology/green_patent_results.csv", index=False)
+result_frame[result_frame.columns.difference(['title', 'abstract'])].to_csv("green-technology/green_patent_results.csv",
+                                                                            index=False)

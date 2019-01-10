@@ -8,6 +8,8 @@ import csv
 import re
 import datetime
 from multiprocessing.dummy import Pool as ThreadPool
+import dask.dataframe as dd
+from dask.multiprocessing import get
 
 import pprint
 
@@ -145,14 +147,20 @@ def search_for_terms(row, nano_pattern, measures, quantum_terms, self_terms, mot
 def patent_search(file, field_list, nano_pattern, measures, quantum_terms, self_terms, motor, micro,
                   quasi, biosensor, MolEnv1, MolEnvR, exclusion_terms):
     current_file_data = pd.read_csv(file, sep="\t")
-    current_file_data.assign(
+    current_file_data = current_file_data.assign(
         text=current_file_data[field_list].apply(lambda x: ' '.join(x.dropna().values.tolist()), axis=1))
-    current_file_results = current_file_data.join(current_file_data.apply(search_for_terms, axis=1,
-                                                                          args=(
-                                                                              field_list, nano_pattern, measures,
+    d_current_file_data=dd.from_pandas(current_file_data, npartitions=30)
+    current_file_results = d_current_file_data.map_partitions(
+        lambda df: df.progress_apply((lambda row: search_for_terms(row, nano_pattern, measures,
                                                                               quantum_terms, self_terms, motor, micro,
                                                                               quasi, biosensor, MolEnv1, MolEnvR,
-                                                                              exclusion_terms)))
+                                                                              exclusion_terms)), axis=1)).compute(scheduler=get)
+    # current_file_results = current_file_data.join(current_file_data.apply(search_for_terms, axis=1,
+    #                                                                       args=(
+    #                                                                            nano_pattern, measures,
+    #                                                                           quantum_terms, self_terms, motor, micro,
+    #                                                                           quasi, biosensor, MolEnv1, MolEnvR,
+    #                                                                           exclusion_terms)))
     current_file_results.to_csv("patents.csv", index=False, mode="a")
 
 

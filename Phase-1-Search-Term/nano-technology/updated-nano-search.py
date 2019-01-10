@@ -9,7 +9,8 @@ import re
 import datetime
 from multiprocessing.dummy import Pool as ThreadPool
 
-# import pprint
+import pprint
+
 # from tqdm import tqdm
 # tqdm.pandas(desc="progress")
 
@@ -145,7 +146,7 @@ def patent_search(file, field_list, nano_pattern, measures, quantum_terms, self_
                   quasi, biosensor, MolEnv1, MolEnvR, exclusion_terms):
     current_file_data = pd.read_csv(file, sep="\t")
     current_file_data.assign(
-        text=current_file_data[[field_list]].apply(lambda x: ' '.join(x.dropna().values.tolist()), axis=1))
+        text=current_file_data[field_list].apply(lambda x: ' '.join(x.dropna().values.tolist()), axis=1))
     current_file_results = current_file_data.join(current_file_data.apply(search_for_terms, axis=1,
                                                                           args=(
                                                                               field_list, nano_pattern, measures,

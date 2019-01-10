@@ -16,3 +16,4 @@ pandas == 0.20.2
 # Phase 2 - Assignee Extraction\Assignee-Details.py: 10
 # Phase-1-Search-Term\search-for-terms.py: 6
 tqdm == 4.15.0
+xlrd

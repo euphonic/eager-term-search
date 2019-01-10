@@ -239,7 +239,7 @@
             "water purif*",
             "water pollut*"
           ],
-          "joinwith": ""
+          "joinwith": "OR"
         }
       ],
       "joinwith": "AND"

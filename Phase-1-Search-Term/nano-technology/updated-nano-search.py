@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # In[56]:
@@ -9,6 +8,7 @@ import csv
 import re
 import datetime
 from multiprocessing.dummy import Pool as ThreadPool
+
 # import pprint
 # from tqdm import tqdm
 # tqdm.pandas(desc="progress")
@@ -27,7 +27,6 @@ One list of search terms and dependencies (things that must appear with the sear
 exclusion_terms = pd.read_excel("nanotech/exclusion_terms1.xlsx", header=None)
 exclusion_terms = [str(i) for i in exclusion_terms[0].tolist()]
 
-
 # In[3]:
 
 with open("nanotech/nano_organism_to_exclude.txt", "r") as myfile:
@@ -40,12 +39,10 @@ with open("nanotech/nano_organism_to_exclude.txt", "r") as myfile:
 # if any of these terms appear the patent should be excluded
 exclusion_terms = exclusion_terms + nano_organism_to_exclude
 
-
 # these are the nano-measure terms which are not a sufficient reason to
 # include a paternt
 measure_terms = pd.read_excel("nanotech/measure_terms.xlsx", header=None)
 measures = [str(i) for i in measure_terms[0].tolist()]
-
 
 # this are some of the additional conditions needed for a search term to count
 with open("nanotech/MolEnv_1_in.txt", "r") as myfile:
@@ -54,7 +51,6 @@ with open("nanotech/MolEnv_1_in.txt", "r") as myfile:
 with open("nanotech/MolEnv_R_in.txt", "r") as myfile:
     for line in myfile:
         MolR = line.strip("\n")
-
 
 conditions = pd.read_excel("nanotech/search_terms.xlsx")
 
@@ -81,7 +77,6 @@ def organize_text(list_of_terms, islist=False):
 nano = r"\bnano[^\s]*"
 nano_pattern = re.compile(nano)
 
-
 measures = organize_text(measures, islist=True)
 quantum_terms = organize_text(conditions.iloc[1, 0])
 self_terms = organize_text(conditions.iloc[2, 0])
@@ -93,13 +88,15 @@ quasi = organize_text(conditions.iloc[5, 0])
 biosensor = organize_text(conditions.iloc[6, 0])
 exclusion_terms = organize_text(exclusion_terms, islist=True)
 
+
 # This essentially processes one record at a time and returns a list of
 # booleans indicating existence of search terms
 
 
 def search_for_terms(row, nano_pattern, measures, quantum_terms, self_terms, motor, micro,
                      quasi, biosensor, MolEnv1, MolEnvR, exclusion_terms):
-    match_id = {"Nano Term": False, "Quantum Term": False, "Self Term": False, "Molecular Motor Term": False, "Micro Term": False,
+    match_id = {"Nano Term": False, "Quantum Term": False, "Self Term": False, "Molecular Motor Term": False,
+                "Micro Term": False,
                 "Quasi Term": False, "Biosensor Term": False, "Biosensor 2 Term": False, "exclusion": False,
                 "measure_exclusion": False, "selection": False}
 
@@ -137,36 +134,32 @@ def search_for_terms(row, nano_pattern, measures, quantum_terms, self_terms, mot
         match_id["Nano Term"] = True
         final_inclusion = True
     match_id["selection"] = final_inclusion and not match_id["exclusion"]
-    return(pd.Series(match_id))
+    return (pd.Series(match_id))
+
 
 # This function processes one file at a time and appends the patents to
 # the same csv file
 
 
-def patent_search(file, nano_pattern, measures, quantum_terms, self_terms, motor, micro,
+def patent_search(file, field_list, nano_pattern, measures, quantum_terms, self_terms, motor, micro,
                   quasi, biosensor, MolEnv1, MolEnvR, exclusion_terms):
     current_file_data = pd.read_csv(file, sep="\t")
+    current_file_data.assign(
+        text=current_file_data[[field_list]].apply(lambda x: ' '.join(x.dropna().values.tolist()), axis=1))
     current_file_results = current_file_data.join(current_file_data.apply(search_for_terms, axis=1,
-                                                                          args=(nano_pattern, measures, quantum_terms, self_terms, motor, micro, quasi, biosensor, MolEnv1, MolEnvR, exclusion_terms)))
+                                                                          args=(
+                                                                              field_list, nano_pattern, measures,
+                                                                              quantum_terms, self_terms, motor, micro,
+                                                                              quasi, biosensor, MolEnv1, MolEnvR,
+                                                                              exclusion_terms)))
     current_file_results.to_csv("patents.csv", index=False, mode="a")
 
 
-import os
-subdirs = os.listdir(
-    "Z:\\Science Policy Portfolio\\PatentsView IV\\Data\\Parsed_2002-2017")
-paths = [os.path.join(
-    "Z:\\Science Policy Portfolio\\PatentsView IV\\Data\\Parsed_2002-2017", item) for item in subdirs]
-
-
-fields_to_search = ["brf_sum_text.csv", "detail_desc_text.csv", "claim.csv"]
-files = []
-for path in paths:
-    for j in fields_to_search:
-        files.append(os.path.join(path, j))
+fields_to_search = ["abstract", "title"]
+files = ["sample_titles_abstracts_20170307.tsv"]
 pprint.pprint(files)
 pprint.pprint(datetime.datetime.now().time())
 
-
 for i in files:
-    patent_search(i, nano_pattern, measures, quantum_terms, self_terms, motor, micro,
+    patent_search(i, fields_to_search, nano_pattern, measures, quantum_terms, self_terms, motor, micro,
                   quasi, biosensor, MolEnv1, MolEnvR, exclusion_terms)

@@ -157,7 +157,7 @@ def patent_search(file, field_list, nano_pattern, measures, quantum_terms, self_
 
 
 fields_to_search = ["abstract", "title"]
-files = ["sample_titles_abstracts_20170307.tsv"]
+files = ["titles_abstracts_20170307.tsv"]
 pprint.pprint(files)
 pprint.pprint(datetime.datetime.now().time())
 

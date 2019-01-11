@@ -13,7 +13,7 @@ from dask.multiprocessing import get
 from dask.diagnostics import ProgressBar
 ProgressBar().register()
 import pprint
-
+import time
 # from tqdm import tqdm
 # tqdm.pandas(desc="progress")
 
@@ -147,20 +147,27 @@ def search_for_terms(row, nano_pattern, measures, quantum_terms, self_terms, mot
 
 def patent_search(file, field_list, nano_pattern, measures, quantum_terms, self_terms, motor, micro,
                   quasi, biosensor, MolEnv1, MolEnvR, exclusion_terms):
+    start_time = start_time = time.time()
     current_file_data = pd.read_csv(file, sep="\t")
-    d_current_file_data=dd.from_pandas(current_file_data)
+    pprint.pprint(time.time()-start_time)
+    d_current_file_data=dd.from_pandas(current_file_data, npartitions=10)
+    pprint.pprint(time.time() - start_time)
     join_results = d_current_file_data.map_partitions(
         lambda df: df[field_list].apply(lambda x: ' '.join(x.dropna().values.tolist()), axis=1)).compute(
         scheduler=get)
+    pprint.pprint(time.time() - start_time)
     current_file_data = current_file_data.assign(text=join_results)
     del join_results
     current_file_data.drop(field_list, inplace=True, axis=1)
+    pprint.pprint(time.time() - start_time)
     d_current_file_data = dd.from_pandas(current_file_data, npartitions=10)
+    pprint.pprint(time.time() - start_time)
     current_file_results = d_current_file_data.map_partitions(
         lambda df: df.apply((lambda row: search_for_terms(row, nano_pattern, measures,
                                                                    quantum_terms, self_terms, motor, micro,
                                                                    quasi, biosensor, MolEnv1, MolEnvR,
                                                                    exclusion_terms)), axis=1)).compute(scheduler=get)
+    pprint.pprint(time.time() - start_time)
     # current_file_results = current_file_data.join(current_file_data.apply(search_for_terms, axis=1,
     #                                                                       args=(
     #                                                                            nano_pattern, measures,

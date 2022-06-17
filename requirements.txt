@@ -4,7 +4,7 @@
 # Phase 2 - Assignee Extraction\Assignee-Details-part2.py: 5
 # Phase 2 - Assignee Extraction\Assignee-Details.py: 7
 # Phase-1-Search-Term\nano-technology\updated-nano-search.py: 7
-numpy == 1.12.1
+numpy == 1.21.0
 
 # Phase 2 - Assignee Extraction\Assignee-Details-part2.py: 4
 # Phase 2 - Assignee Extraction\Assignee-Details.py: 6

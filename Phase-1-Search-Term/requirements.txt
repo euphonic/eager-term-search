@@ -2,7 +2,7 @@
 # https://github.com/Damnever/pigar
 
 # nano-technology\updated-nano-search.py: 7
-numpy == 1.12.1
+numpy == 1.21.0
 
 # nano-technology\updated-nano-search.py: 6
 # search-for-terms.py: 4
